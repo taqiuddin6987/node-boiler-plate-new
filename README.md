@@ -210,45 +210,11 @@ module/
 │── routes.js
 ```
 
----
-
-## 📜 License
-
-This project is licensed under the ISC License.
-
----
-
 ## 📝 Commitlint Configuration (For Git Commits)
 
 The repository uses **commitlint** to enforce conventional commit messages.
 
 `.commitlintrc.json` file:
-
-```json
-{
-  "extends": ["@commitlint/config-conventional"],
-  "rules": {
-    "type-enum": [
-      2,
-      "always",
-      [
-        "bugfix",
-        "ci",
-        "chore",
-        "docs",
-        "feat",
-        "fix",
-        "perf",
-        "refactor",
-        "revert",
-        "build",
-        "temp",
-        "review"
-      ]
-    ]
-  }
-}
-```
 
 ### ✔️ How to Use These Commit Types
 
@@ -259,3 +225,10 @@ Example commit messages:
 * `docs: updated README with commitlint rules`
 * `review: PR feedback changes added`
 * `chore: dependencies updated`
+
+---
+
+## 📜 License
+
+This project is licensed under the ISC License.
+
