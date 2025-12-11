@@ -6,38 +6,40 @@ A clean, scalable, and production-ready **Fastify + PostgreSQL + Knex** API boil
 
 ## 🏆 Tech Stack
 
-| Category | Technology |
-|---------|-----------|
-| Backend Framework | **Fastify (v5)** |
-| Database | **PostgreSQL** |
-| ORM / Query Builder | **Knex** |
-| Auth | **Fastify JWT** |
-| Utilities | Puppeteer, DayJS, Lodash |
-| Logging | Winston + Daily Rotate |
-| Validator | TypeBox |
-| API Docs | Swagger |
-| Coding Standards | ESLint + Prettier |
-| Git Hooks | Husky |
-| Runtime | Node.js (ESM) |
+| Category            | Technology               |
+| ------------------- | ------------------------ |
+| Backend Framework   | **Fastify (v5)**         |
+| Database            | **PostgreSQL**           |
+| ORM / Query Builder | **Knex**                 |
+| Auth                | **Fastify JWT**          |
+| Utilities           | Puppeteer, DayJS, Lodash |
+| Logging             | Winston + Daily Rotate   |
+| Validator           | TypeBox                  |
+| API Docs            | Swagger                  |
+| Coding Standards    | ESLint + Prettier        |
+| Git Hooks           | Husky                    |
+| Runtime             | Node.js (ESM)            |
 
 ---
 
 ## 🎯 Features
 
-✅ ES Module support (`type: module`)  
-✅ Environment-based configuration  
-✅ Authentication (JWT)  
-✅ Role-based architecture (controllers, services, models)  
-✅ Database migrations + seeds  
-✅ Cron Jobs (Token cleanup job included)  
-✅ Pagination, Helpers, Validators  
-✅ File upload + static file hosting  
-✅ Swagger auto documentation  
-✅ Global error handler  
-✅ Secure headers via Helmet  
-✅ Rate limiting  
-✅ Production-level logging  
-✅ Folder alias imports (#utils, #models, #configs, etc.)
+✨ **Modern Features Included**
+
+* ⚙️ **ES Module support** (`type: module`)
+* 🌍 **Environment-based configuration**
+* 🔐 **Authentication (JWT)**
+* 🧩 **Role-based architecture** (controllers, services, models)
+* 🗄️ **Database migrations + seeds**
+* ⏰ **Cron Jobs** (Token cleanup job included)
+* 📊 **Pagination**, Helpers, Validators
+* 📁 **File upload + static hosting**
+* 📘 **Swagger auto documentation**
+* 🛑 **Global error handler**
+* 🛡️ **Secure headers via Helmet**
+* 🚦 **Rate limiting**
+* 📜 **Production-level logging**
+* 🔗 **Folder alias imports** (#utils, #models, #configs, etc.)
 
 ---
 
@@ -49,39 +51,61 @@ Clone project:
 git clone your-repo-link
 cd project-folder
 npm install
+```
 
-⚙️ Environment Setup
+---
 
+## ⚙️ Environment Setup
+
+```
 PORT=5000
 NODE_ENV=development
 DATABASE_URL=postgres://username:password@localhost:5432/dbname
 JWT_SECRET=your-secret-key
 TOKEN_EXPIRES_IN=1d
+```
 
-▶️ Run Development Server
+---
 
+## ▶️ Run Development Server
+
+```
 npm run start:dev
+```
 
-🗄️ Database Management (Knex)
+---
 
+## 🗄️ Database Management (Knex)
+
+```
 npm run migrate:latest
 npm run migrate:rollback
 npm run migrate:make migration_name
 npm run seed:make seed_name
 npm run seed:all
+```
 
-🧪 Running Utility Scripts
+---
 
+## 🧪 Running Utility Scripts
+
+```
 npm run script:run
 npm run format
 npm run lint
+```
 
-📚 API Documentation (Swagger)
+---
 
-http://localhost:5000/docs
+## 📚 API Documentation (Swagger)
 
-📂 Project Structure (Tree)
+[http://localhost:5000/docs](http://localhost:5000/docs)
 
+---
+
+## 📂 Project Structure (Tree)
+
+```
 │   .commitlintrc.json
 │   .env.development
 │   .gitignore
@@ -164,21 +188,74 @@ http://localhost:5000/docs
             │   user.routes.js
             │   user.service.js
             │   user.swagger.js
+```
 
-🔐 Authentication Flow
+---
 
-Client → /auth/login  
-Server verifies user → JWT token generate  
+## 🔐 Authentication Flow
+
+Client → /auth/login
+Server verifies user → JWT token generate
 Client uses Bearer Token for protected routes
 
-📦 Modules Architecture
+---
 
+## 📦 Modules Architecture
+
+```
 module/
 │── controller.js
 │── service.js
 │── swagger.js
 │── routes.js
+```
 
-📜 License
+---
+
+## 📜 License
+
 This project is licensed under the ISC License.
 
+---
+
+## 📝 Commitlint Configuration (For Git Commits)
+
+The repository uses **commitlint** to enforce conventional commit messages.
+
+`.commitlintrc.json` file:
+
+```json
+{
+  "extends": ["@commitlint/config-conventional"],
+  "rules": {
+    "type-enum": [
+      2,
+      "always",
+      [
+        "bugfix",
+        "ci",
+        "chore",
+        "docs",
+        "feat",
+        "fix",
+        "perf",
+        "refactor",
+        "revert",
+        "build",
+        "temp",
+        "review"
+      ]
+    ]
+  }
+}
+```
+
+### ✔️ How to Use These Commit Types
+
+Example commit messages:
+
+* `feat: user login API added`
+* `fix: pagination crash issue resolved`
+* `docs: updated README with commitlint rules`
+* `review: PR feedback changes added`
+* `chore: dependencies updated`
