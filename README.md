@@ -58,11 +58,21 @@ npm install
 ## ⚙️ Environment Setup
 
 ```
+PROTOCOL = http
 PORT=5000
+HOST = "0.0.0.0"
+DOMAIN = "<yout-domain>"
+BASEPATH = "<your-basepath>"
+DB_HOST = "<your-db-host>"
+DB_PORT = your_db_port
+DB_USER = "<your-db-user>"
+DB_PASSWORD = "<your-db-password>"
+DATABASE = "<your-database-name>"
+ACCESS_JWT_SECRET = JWT-secret
+ACCESS_JWT_EXPIRES_IN = 24h
+REFRESH_JWT_SECRET = JWT-refresh-secret
+REFRESH_JWT_EXPIRES_IN = 48h
 NODE_ENV=development
-DATABASE_URL=postgres://username:password@localhost:5432/dbname
-JWT_SECRET=your-secret-key
-TOKEN_EXPIRES_IN=1d
 ```
 
 ---
@@ -231,5 +241,6 @@ Example commit messages:
 ## 📜 License
 
 This project is licensed under the ISC License.
+
 
 
