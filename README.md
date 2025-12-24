@@ -59,7 +59,7 @@ npm install
 
 ```
 PROTOCOL = http
-PORT=5000
+PORT=3000
 HOST = "0.0.0.0"
 DOMAIN = "<yout-domain>"
 BASEPATH = "<your-basepath>"
@@ -241,6 +241,7 @@ Example commit messages:
 ## 📜 License
 
 This project is licensed under the ISC License.
+
 
 
 
