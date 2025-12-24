@@ -48,7 +48,7 @@ A clean, scalable, and production-ready **Fastify + PostgreSQL + Knex** API boil
 Clone project:
 
 ```bash
-git clone your-repo-link
+git clone https://github.com/taqiuddin6987/node-boiler-plate-new.git
 cd project-folder
 npm install
 ```
@@ -231,4 +231,5 @@ Example commit messages:
 ## 📜 License
 
 This project is licensed under the ISC License.
+
 
