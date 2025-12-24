@@ -60,7 +60,7 @@ npm install
 ```
 PROTOCOL = http
 PORT=3000
-HOST = "0.0.0.0"
+HOST = "<your-host>"
 DOMAIN = "<yout-domain>"
 BASEPATH = "<your-basepath>"
 DB_HOST = "<your-db-host>"
@@ -109,7 +109,7 @@ npm run lint
 
 ## 📚 API Documentation (Swagger)
 
-[http://localhost:5000/docs](http://localhost:5000/docs)
+[http://localhost:5000/docs](http://localhost:3000/documentation)
 
 ---
 
@@ -241,6 +241,7 @@ Example commit messages:
 ## 📜 License
 
 This project is licensed under the ISC License.
+
 
 
 
